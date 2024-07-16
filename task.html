@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handmade Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #feade7;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            background-color: bisque;
+            color:white;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: #fbd9d9;
+        }
+
+        header h1 {
+            color: teal;
+            margin: 0;
+        }
+
+        .bgimg {
+            background: url('https://cdn.shopify.com/s/files/1/0070/7032/files/selling-handmade-goods.png?v=1528140509');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .bgimg button {
+            background-color: rgb(33, 156, 156);
+            border-radius: 30px;
+            font-size: medium;
+            color: azure;
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .bgimg button:hover {
+            background-color: rgb(23, 106, 106);
+            transform: scale(1.1);
+        }
+
+        .collections, .top-picks {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .collections h2, .collections h3, .top-picks h3 {
+            color: teal;
+            font-family: 'Georgia', 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            text-align: center;
+        }
+
+        .gallery-item img {
+            border-radius: 10px;
+            height: 250px;
+            width: 250px;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+            padding: 50px 0;
+        }
+
+        .product-item {
+            height:220px;
+            width:500px;
+            text-align: center;
+            font-style: italic;
+            font-weight: lighter;
+        }
+
+        .product-item.left {
+            background-color: bisque;
+        }
+
+        .product-item.right {
+            background-color:rgb(254, 209, 254);
+        }
+
+        .product-item p {
+            font-size: large;
+        }
+
+        .product-item img {
+            height: 200px;
+            width: 200px;
+            border-radius:90px;
+        }
+
+        .footer {
+            background-color:  #feade7;
+            text-align: center;
+            padding: 50px;
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="content">
+        <h1>Design and Handcrafted Goods</h1>
+        <div class="bgimg">
+            <button>Shop Now</button>
+        </div>
+        </div>
+    </header>
+    <section class="collections">
+        <h2>Our Collections</h2>
+        <h3>Our Categories</h3>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTvyZcaJGFxt-TyRq-jfwg61BlJ-YVfbm_hw&s" alt=">Handcrafted Vase">
+                <p>Handcrafted Vase</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBLH9NRx4IUiQ9cIDu-ReMb1g1N0obGtn2cw&s" alt="Metal crafts">
+                <p>Metal crafts</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0nepLPEFOTWVqek7Cb5YIVCTK2I2TVcgoDA&s" alt="Animal idols">
+                <p>Animal idols</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyqH3AbFvNRf0ZK818cp3xFTGWyK8RbHz5Tw&s" alt="Art">
+                <p>Art</p>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="product-item left">
+            <p>Little Simple Things</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ7GWx_7bMMpPCF7gEOZMHbvtPDs3D08uCNQ&s" alt="Little Simple Things">
+        </div>
+        <div class="product-item right">
+            <p>Bamboo Basket</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVIX9EYwk3K303OHwU1DByHU27lDuL8teIug&s" alt="Bamboo Basket">
+        </div>
+    </section>
+    <section class="top-picks">
+        <h3>Top Picks For You</h3>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBTCqZuRfGVRcudt5ON25Y7IuNmwzjOTn6ag&s" alt="handicrafted products">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAUGn-oOLedLlPyzill0sgIVfI9cl03mvOeA&s" alt="handicrafted products">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGSycQqplK0kcxY5GlPucZSbSq_0psmbSJcw&s" alt="handicrafted products">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3aD8QtUzXk4NxCMg1PjT4NNkPdIh7S5aMHA&s" alt="handicrafted products">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTALWWiPDGeeyyfqzFK6TZpzeb4RfZSJb0DAQ&s" alt="handicrafted products">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2y0N-WpDvD9GCgmvx8nVk8zsZ7Xc2ZAwP3A&s" alt="handicrafted products">
+            </div>
+            <div class="gallery-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmIWZhzM8CsaRg0t8eLw7B0DL0ySXn5gY7oA&s" alt="handicrafted products">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Handmade Products. All rights reserved.</p>
+    </footer>
+</body>
+</html>
